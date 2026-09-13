@@ -16,21 +16,26 @@
   {% seo %}
 </head>
 <body>
+  <!-- Encabezado con logo y título -->
   <header>
     <a href="{{ '/' | relative_url }}" style="text-decoration:none; color:inherit;">
       <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Logo Bastión Arcano" class="logo">
       <h1>⚜ Bastión Arcano ⚜</h1>
       <p>Donde la magia y el acero se encuentran</p>
     </a>
-
-    <!-- Menú horizontal importado -->
-    {% include nav.html %}
   </header>
 
+  <!-- Sección independiente para la barra de navegación -->
+  <section class="navbar-section">
+    {% include nav.html %}
+  </section>
+
+  <!-- Contenido principal -->
   <main>
     {{ content }}
   </main>
 
+  <!-- Pie de página -->
   <footer>
     © 2026 Bastión Arcano — Comunidad Minecraft<br>
     <a href="https://discord.gg/pgz7ZS3nMy">Discord</a> |
