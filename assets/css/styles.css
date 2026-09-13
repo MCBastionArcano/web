@@ -103,3 +103,40 @@ footer a:hover {
     0% { transform: translateX(0); }
     100% { transform: translateX(-500px); }
 }
+
+/* Navbar horizontal */
+.navbar {
+    background: rgba(20, 15, 35, 0.9);
+    border-top: 3px solid #d4af37;
+    border-bottom: 3px solid #d4af37;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;              /* fuerza horizontal */
+    justify-content: center;    /* centra los botones */
+    gap: 30px;                  /* separación entre botones */
+}
+
+.navbar li {
+    display: inline;            /* asegura que no se apilen */
+}
+
+.navbar a {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #bfa8ff;
+    text-shadow: 0 0 10px #3b82f6;
+    border-bottom: 2px solid #bfa8ff;
+}
