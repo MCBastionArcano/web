@@ -22,26 +22,14 @@
       <h1>⚜ Bastión Arcano ⚜</h1>
       <p>Donde la magia y el acero se encuentran</p>
     </a>
+
+    <!-- Menú horizontal importado -->
+    {% include nav.html %}
   </header>
 
-  <div id="container">
-    <!-- Menú lateral -->
-    <aside class="sidebar">
-      <nav>
-        <ul>
-          <li><a href="{{ '/' | relative_url }}">🏰 Inicio</a></li>
-          <li><a href="{{ '/reglas.md' | relative_url }}">🛡 Reglas</a></li>
-          <li><a href="{{ '/cronicas.md' | relative_url }}">📜 Crónicas</a></li>
-          <li><a href="{{ '/contacto.md' | relative_url }}">🔮 Contacto</a></li>
-        </ul>
-      </nav>
-    </aside>
-
-    <!-- Contenido principal -->
-    <main>
-      {{ content }}
-    </main>
-  </div>
+  <main>
+    {{ content }}
+  </main>
 
   <footer>
     © 2026 Bastión Arcano — Comunidad Minecraft<br>
