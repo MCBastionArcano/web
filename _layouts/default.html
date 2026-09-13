@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tipografía medieval -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Merriweather&display=swap" rel="stylesheet">
+
+  <!-- Estilos principales -->
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+
+  <!-- SEO automático -->
+  {% seo %}
+</head>
+<body>
+  <header>
+    <a href="{{ '/' | relative_url }}" style="text-decoration:none; color:inherit;">
+      <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Logo Bastión Arcano" class="logo">
+      <h1>⚜ Bastión Arcano ⚜</h1>
+      <p>Donde la magia y el acero se encuentran</p>
+    </a>
+  </header>
+
+  <div id="container">
+    <!-- Menú lateral -->
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="{{ '/' | relative_url }}">🏰 Inicio</a></li>
+          <li><a href="{{ '/reglas.md' | relative_url }}">🛡 Reglas</a></li>
+          <li><a href="{{ '/cronicas.md' | relative_url }}">📜 Crónicas</a></li>
+          <li><a href="{{ '/contacto.md' | relative_url }}">🔮 Contacto</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main>
+      {{ content }}
+    </main>
+  </div>
+
+  <footer>
+    © 2026 Bastión Arcano — Comunidad Minecraft<br>
+    <a href="https://discord.gg/pgz7ZS3nMy">Discord</a> |
+    <a href="{{ '/reglas.md' | relative_url }}">Reglas</a> |
+    <a href="{{ '/' | relative_url }}">Inicio</a>
+  </footer>
+</body>
+</html>
